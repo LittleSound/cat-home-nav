@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "TrueNAS",
+      "iconUrl": "/icons/毛线球.png",
+      "iconSize": "100%",
+      "themeColor": "#ffffff",
+      "desp": "私有云存储和时间胶囊后台",
+      "host": "nas.home.cat"
+    },
+    {
+      "name": "TrueNAS",
+      "iconUrl": "/icons/毛线球.png",
+      "iconSize": "100%",
+      "themeColor": "#ffffff",
+      "desp": "私有云存储和时间胶囊后台",
+      "host": "nas.home.cat"
+    },
+    {
+      "name": "TrueNAS",
+      "iconUrl": "/icons/毛线球.png",
+      "iconSize": "100%",
+      "themeColor": "#ffffff",
+      "desp": "私有云存储和时间胶囊后台",
+      "host": "nas.home.cat"
+    }
+  ]
+}

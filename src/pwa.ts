@@ -1,7 +1,13 @@
 import { registerSW } from 'virtual:pwa-register'
 
-registerSW({ immediate: true })
+/** Service Worker 更新间隔 */
+const intervalMS = 1000 * 10
 
-// registerSW({
-//   onOfflineReady() {},
-// })
+registerSW({
+  immediate: true,
+  onRegistered(r) {
+    r && setInterval(() => {
+      r.update()
+    }, intervalMS)
+  }
+})

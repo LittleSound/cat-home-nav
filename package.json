@@ -3,16 +3,19 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
+    "build-ssg": "vite-ssg build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "vue": "^3.2.25",
     "workbox-window": "^6.4.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",
     "@vueuse/head": "^0.7.4",
+    "critters": "^0.0.15",
     "typescript": "^4.4.4",
     "vite": "^2.7.2",
     "vite-plugin-pwa": "^0.11.12",

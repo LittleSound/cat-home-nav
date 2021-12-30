@@ -28,7 +28,41 @@ export default defineConfig({
             type: 'image/png',
           }
         ]
-      }
+      },
+      workbox: {
+        runtimeCaching: [
+          // 缓存 config.json 的最新版本
+          {
+            urlPattern: '/config.json',
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'navhomecat-config-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              },
+            }
+          },
+          // 缓存 icons 目录下的图片
+          {
+            urlPattern: /\/icons\/.*/i,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'navhomecat-icons-cache',
+              expiration: {
+                maxEntries: 9999,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              },
+            }
+          }
+        ]
+      },
     }),
   ]
 })
