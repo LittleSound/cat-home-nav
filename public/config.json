@@ -1,28 +1,116 @@
 {
   "apps": [
     {
-      "name": "TrueNAS",
-      "iconUrl": "/icons/毛线球.png",
-      "iconSize": "100%",
-      "themeColor": "#ffffff",
-      "desp": "私有云存储和时间胶囊后台",
-      "host": "nas.home.cat"
+      "name": "软路由管理",
+      "iconUrl": "/icons/openwrt.png",
+      "iconSize": "80%",
+      "desp": "OpenWRT 管理后台",
+      "host": "https://loli.home.cat"
     },
     {
-      "name": "TrueNAS",
-      "iconUrl": "/icons/毛线球.png",
+      "name": "软路由实时监控",
+      "iconUrl": "/icons/netdata.jpg",
       "iconSize": "100%",
-      "themeColor": "#ffffff",
-      "desp": "私有云存储和时间胶囊后台",
-      "host": "nas.home.cat"
+      "desp": "Netdata 监控软路由",
+      "host": "https://netdata.home.cat"
     },
     {
-      "name": "TrueNAS",
-      "iconUrl": "/icons/毛线球.png",
+      "name": "软路由终端",
+      "iconUrl": "/icons/bash.png",
+      "iconSize": "80%",
+      "desp": "透过软路由网页命令行操作软路由",
+      "host": "https://loli-terminal.home.cat"
+    },
+    {
+      "name": "WiFi 管理后台",
+      "iconUrl": "/icons/TUF-logo.png",
       "iconSize": "100%",
-      "themeColor": "#ffffff",
-      "desp": "私有云存储和时间胶囊后台",
-      "host": "nas.home.cat"
+      "desp": "主要 WiFi AP（华硕）管理后台",
+      "host": "http://10.0.0.2"
+    },
+    {
+      "name": "猫窝服务器管理",
+      "iconUrl": "/icons/windows_admin_center.jpg",
+      "iconSize": "100%",
+      "desp": "Windows Admin Center 管理中心，用于管理猫窝云服务器",
+      "host": "https://lab.home.cat"
+    },
+    {
+      "name": "小鲸鱼管理",
+      "iconUrl": "/icons/docker.png",
+      "iconSize": "80%",
+      "desp": "使用 Portainer.io 管理 Docker",
+      "host": "https://docker.home.cat"
+    },
+    {
+      "name": "持续交付系统",
+      "iconUrl": "/icons/droneci.png",
+      "iconSize": "75%",
+      "desp": "Drone CI/CD 持续交付系统",
+      "host": "https://ci.home.cat"
+    },
+    {
+      "name": "NAS 存储管理",
+      "iconUrl": "/icons/truenas.png",
+      "iconSize": "80%",
+      "desp": "TrueNAS 存储管理后台",
+      "host": "https://nas.home.cat"
+    },
+    {
+      "name": "Homekit 中枢",
+      "iconUrl": "/icons/homeassistant.png",
+      "iconSize": "100%",
+      "desp": "Home Assistant 家庭助理管理和操作智能家居和物联网物件",
+      "host": "https://assistant.home.cat"
+    },
+    {
+      "name": "HomeKit 桥",
+      "iconUrl": "/icons/homebridge.png",
+      "iconSize": "90%",
+      "desp": "Home Bridge 桥接 Home Assistant 和其他智能家居设备",
+      "host": "https://bridge.home.cat"
+    },
+    {
+      "name": "Node-RED 低代码平台",
+      "iconUrl": "/icons/node-red.png",
+      "iconSize": "100%",
+      "desp": "Node-RED 低代码平台",
+      "host": "http://10.0.0.123:1880"
+    },
+    {
+      "name": "家庭影院",
+      "iconUrl": "/icons/plex.jpg",
+      "iconSize": "100%",
+      "desp": "Plex 家庭影院系统",
+      "host": "http://10.0.0.165:32400"
+    },
+    {
+      "name": "离线下载",
+      "iconUrl": "/icons/aria2.png",
+      "iconSize": "75%",
+      "desp": "通过 Aria2 下载离线资源",
+      "host": "https://aria2.home.cat"
+    },
+    {
+      "name": "数据监控",
+      "iconUrl": "/icons/prometheus.png",
+      "iconSize": "80%",
+      "desp": "通过普罗米修斯查询监控和告警数据",
+      "host": "https://prom.home.cat"
+    },
+    {
+      "name": "旁路由器管理后台",
+      "iconUrl": "/icons/miwifi.png",
+      "iconSize": "80%",
+      "desp": "小米路由器管理后台（需要连接）",
+      "host": "http://192.168.31.1"
+    },
+    {
+      "name": "iDRAC",
+      "iconUrl": "/icons/idrac.png",
+      "iconSize": "90%",
+      "desp": "戴尔服务器 iDRAC 管理后台，管理和操作服务器 BIOS 设定",
+      "host": "https://idrac.home.cat"
     }
   ]
 }

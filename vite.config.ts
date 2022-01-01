@@ -2,8 +2,21 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 
+// postcss 插件
+import postcssNesting from 'postcss-nesting'
+import autoprefixer from 'autoprefixer'
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  css: {
+    postcss: {
+      plugins: [
+        // 支持符合W3C规范的嵌套类选择器写法
+        postcssNesting,
+        autoprefixer,
+      ],
+    },
+  },
   plugins: [
     vue(),
 
@@ -15,7 +28,7 @@ export default defineConfig({
         name: '猫窝导航',
         short_name: '猫窝导航',
         description: '导航到猫窝里面的各种设施',
-        theme_color: '#ffffff',
+        theme_color: '#fe77a2',
         icons: [
           {
             src: 'pwa-192x192.png',
@@ -26,8 +39,8 @@ export default defineConfig({
             src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
-          }
-        ]
+          },
+        ],
       },
       workbox: {
         runtimeCaching: [
@@ -39,12 +52,12 @@ export default defineConfig({
               cacheName: 'navhomecat-config-cache',
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // <== 365 days
+                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
               },
               cacheableResponse: {
-                statuses: [0, 200]
+                statuses: [0, 200],
               },
-            }
+            },
           },
           // 缓存 icons 目录下的图片
           {
@@ -54,15 +67,15 @@ export default defineConfig({
               cacheName: 'navhomecat-icons-cache',
               expiration: {
                 maxEntries: 9999,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // <== 365 days
+                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
               },
               cacheableResponse: {
-                statuses: [0, 200]
+                statuses: [0, 200],
               },
-            }
-          }
-        ]
+            },
+          },
+        ],
       },
     }),
-  ]
+  ],
 })
