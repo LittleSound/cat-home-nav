@@ -1,6 +1,10 @@
-# cat-home-nav
+<p align="center">
+	<img src="https://raw.githubusercontent.com/LittleSound/cat-home-nav/main/public/pwa-192x192.png">
+</p>
 
-猫窝导航 —— 导航到猫窝里面的各种设施
+<h1 align="center">cat-home-nav</h1>
+
+<p align="center">猫窝导航 —— 导航到猫窝里面的各种设施</p>
 
 ## 使用方法
 
